@@ -3,7 +3,7 @@
 import TaskCard from "./components/TaskCard"
 
 // ## What I Learned:
-// 1. **Props:** Used to pass task data into the TaskCard component. -Not Started
+// 1. **Props:** Used to pass task data into the TaskCard component. - DONE
 // 2. **Conditional Rendering:** Show ✅ or ❌ depending on task completion. - DONE
 // 3. **List Rendering:** Used `.map()` to render tasks dynamically. -DONE
 // 4. **Click Events:** Click to mark a task as done or delete it. - DONE
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-    <TaskCard/>
+    <TaskCard name={"Memo"}/>
     </>
   )
 }

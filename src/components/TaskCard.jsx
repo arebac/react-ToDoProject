@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../components/TaskCard.module.css";
 
-const TaskCard = () => {
+const TaskCard = (props) => {
   const [toDo, setTodo] = useState([]);
   const [task, setTask] = useState("");
 
@@ -18,6 +18,7 @@ const TaskCard = () => {
         status: "Not Done",
       },
     ]);
+    setTask("")
   };
 
   const filterTodo = (id) => {
@@ -36,8 +37,16 @@ const TaskCard = () => {
     setTodo(statusUpdate);
   }
 
+   const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      createToDo();
+    }
+
+  }
+
   return (
     <>
+   
       <div className={styles.ToDoApp}>
         <h1>To Do:</h1>
         <input
@@ -46,11 +55,13 @@ const TaskCard = () => {
           value={task}
           placeholder="What you gotta do?"
           onChange={createTask}
+          onKeyDown={handleKeyPress}
         ></input>
         <button value={task} onClick={createToDo}>
           Create Task
         </button>{" "}
       </div>
+      <h1 className={styles.listHeader}>This is {props.name}'s to do list</h1>
       <div className={styles.TodoArea}>
         {toDo &&
           toDo.map((x) => (

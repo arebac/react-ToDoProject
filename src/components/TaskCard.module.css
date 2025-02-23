@@ -9,6 +9,21 @@
   border: 5px solid #ffcf33;
 }
 
+.listHeader{
+  display: flex;
+  font-size:4rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  color:#B90CE7;
+  margin-top:2%;
+  margin-bottom: 0%;
+  background-color: #13257A;
+  border-radius: 45%;
+  border: 3px solid #B90CE7  ;
+  margin-left: 10%;
+}
+
 .ToDoApp h1 {
   padding-right: 1%;
 }
@@ -34,7 +49,7 @@
   display: flex;
   flex-direction: row;
   width: 40%;
-  height: 5%;
+  height: 10%;
   background-image: linear-gradient(160deg, #00e8d7, #9fe1a6, #d7d872, #ffcf33);
   border-radius: 30%;
   border: 5px solid #ffcf33;
@@ -43,6 +58,8 @@
   align-items: center;
   margin-bottom: 0%;
   padding-left: 5%;
+
+
 }
 
 .todoCard h3 {
@@ -51,7 +68,9 @@
 
 .todoCard p {
   padding-left: 1%;
-  width:15%
+  width:30%;
+  white-space: normal; /* Allows wrapping */
+    overflow: hidden; /* Prevents text from spilling out */
 }
 
 .statusCss {
@@ -59,7 +78,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 20%;
+  margin-left: 20%
 
 
 }
