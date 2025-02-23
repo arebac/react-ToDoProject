@@ -1,0 +1,77 @@
+.ToDoApp {
+  display: flex;
+  width: 99%;
+  height: 5%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(160deg, #00e8d7, #9fe1a6, #d7d872, #ffcf33);
+  border-radius: 30%;
+  border: 5px solid #ffcf33;
+}
+
+.ToDoApp h1 {
+  padding-right: 1%;
+}
+
+.ToDoApp input {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.TodoArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0.1%;
+
+}
+
+.todoCard {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 5%;
+  background-image: linear-gradient(160deg, #00e8d7, #9fe1a6, #d7d872, #ffcf33);
+  border-radius: 30%;
+  border: 5px solid #ffcf33;
+  margin-top: 3%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0%;
+  padding-left: 5%;
+}
+
+.todoCard h3 {
+  padding-left: 2%;
+}
+
+.todoCard p {
+  padding-left: 1%;
+  width:15%
+}
+
+.statusCss {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+
+
+}
+
+.statusCss label{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  
+  
+}
+
+.statusCss select{
+  margin-left: 5%;
+}

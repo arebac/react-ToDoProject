@@ -1,0 +1,10 @@
+.ToDoApp {
+    display: flex;
+    width: 99%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(160deg, #00e8d7, #9fe1a6, #d7d872, #ffcf33);
+    border-radius: 30%;
+    border: 5px solid #ffcf33;
+  }
